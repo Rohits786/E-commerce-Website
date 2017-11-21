@@ -5,12 +5,7 @@ $password="rohit888";
 $db="id3688264_rohitdb";
 $conn=mysqli_connect($server,$username,$password,$db);
 $error="";
-/*$server="localhost";
-$username="learn_php";
-$password="hello123";
-$db="skill_spread";
-$conn=mysqli_connect($server,$username,$password,$db);
-*/
+
 if(isset($_POST['submit']))
 {
     $uname=mysqli_real_escape_string($conn,$_POST['uname']);
